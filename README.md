@@ -72,6 +72,46 @@ npm run dev
 ```
 -Open your browser and visit http://localhost:5173 to see the app in action.
 
+### 🐳 Option 2: Run with Docker
+Perfect for deploying on a server like AWS EC2, DigitalOcean, etc.
+
+
+## 🐳 Option 2: Run with Docker
+
+> Perfect for deploying on a server like AWS EC2, DigitalOcean, etc.
+
+### ✅ Prerequisites
+
+- Docker installed on your system
+- An OpenWeather API key from [https://openweathermap.org](https://openweathermap.org)
+
+---
+
+## ⚙️ Steps
+
+### 1. Pull the Docker image
+
+```bash
+docker pull 3sangeetha3/zynetic-weather-zone
+```
+
+### 2. Run the container
+```bash
+docker run -d -p 5173:5173 --name zynetic \
+  -e VITE_OPENWEATHER_API_KEY=your_openweather_api_key_here \
+  3sangeetha3/zynetic-weather-zone
+```
+### 3. Visit the app
+
+- On a **cloud server** (like EC2):  
+  `http://<your-public-ip>:5173`
+
+- On your **own machine**:  
+  `http://localhost:5173`
+
+> 💡 **Important:** Ensure that port `5173` is open in your EC2 security group or local firewall settings.
+
+
 
 ### 📂 Project Structure
 ```bash
