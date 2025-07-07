@@ -133,10 +133,10 @@ zynetic/
 ├── package.json
 └── README.md
 ```
-### Deployment on Vercel
+### Deployment on cloudflare
 
-- **Live Link:** [https://www.3sangeetha3.tech/](https://www.3sangeetha3.tech/)
-- **Vercel Link:** [https://zynetic.vercel.app/](https://zynetic.vercel.app/)
+- **Live Link:** [weather-zone.pages.dev](https://weather-zone.pages.dev/)
+- **Cloudflare Link:** [https://weather-zone.pages.dev/](https://weather-zone.pages.dev/)
 
 
 <p align="center"> Made with ❤️ by Sangeetha Choudhary </p>
